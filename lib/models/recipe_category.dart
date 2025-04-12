@@ -1,0 +1,1 @@
+enum RecipeCategory { all, breakfast, lunch, dinner, dessert }
