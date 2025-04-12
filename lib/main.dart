@@ -46,6 +46,7 @@ class _RecipeAppState extends State<RecipeApp> {
       darkTheme: AppTheme.darkTheme,
       themeMode: _isDarkMode ? ThemeMode.dark : ThemeMode.light,
       home: HomeScreen(onThemeToggle: toggleTheme),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
