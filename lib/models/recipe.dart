@@ -27,7 +27,7 @@ class Recipe {
       ingredients: map['ingredients'] ?? '',
       instructions: map['instructions'] ?? '',
       category: RecipeCategory.values.firstWhere(
-            (e) => e.toString() == 'RecipeCategory.${map['category']}',
+            (e) => e.toString().split('.').last == map['category'],
         orElse: () => RecipeCategory.all,
       ),
     );

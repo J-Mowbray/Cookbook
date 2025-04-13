@@ -55,11 +55,12 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text(_titles[_selectedIndex]),
         actions: [
           IconButton(
+            key: const Key('theme_toggle_button'), // Add this key
             icon: Icon(
               brightness == Brightness.dark
                   ? Icons.wb_sunny_outlined
                   : Icons.nightlight_round,
-              semanticLabel: 'Toggle theme', // For accessibility
+              semanticLabel: 'Toggle theme',
             ),
             onPressed: () => widget.onThemeToggle(),
             tooltip: 'Toggle theme',
